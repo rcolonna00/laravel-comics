@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 975px;
+  margin: auto;
+}
+
+.container-small {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  /* INIZIO JUMBOTRON */
+  /* FINE JUMBOTRON */
+}
+
+header .blu-line {
+  background-color: #0282f9;
+  color: white;
+  text-align: right;
+}
+
+header .blu-line span {
+  padding-left: 30px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+header .container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container ul li {
+  list-style-type: none;
+}
+
+header .container ul li .logo img {
+  height: 75px;
+  width: auto;
+  margin: 15px 0;
+}
+
+header .container ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: grey;
+}
+
+header .container ul li input {
+  border-bottom-color: #46a3fa;
+  border-width: 0px;
+  border-bottom-width: 2px;
+  text-align: end;
+  max-width: 105px;
+}
+
+header .jumbotron {
+  height: 300px;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-size: cover;
+}
+
+/* INIZIO MAIN */
+
+/* INIZIO FUMETTI */
+
+.fumetti {
+  background-color: black;
+  padding: 15px 0;
+}
+
+.fumetti .container-fumetti {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.fumetti .container-fumetti .current-series {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding: 8px 25px;
+  background-color: #0282f9;
+  max-width: 187px;
+  font-weight: 600;
+  font-size: 13px;
+  position: absolute;
+  left: 0px;
+  top: -30px;
+}
+
+.fumetti .container-fumetti .singolo-fumetto {
+  margin: 25px 0;
+  width: calc(( 100% / 6 ) - 15px);
+}
+
+.fumetti .container-fumetti .singolo-fumetto .image-fumetto img {
+  width: 130px;
+}
+
+.fumetti .container-fumetti .singolo-fumetto .nome-fumetto {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: small;
+}
+
+.fumetti .load-more {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding: 8px 25px;
+  background-color: #0282f9;
+  max-width: 150px;
+  margin: auto;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* FINE FUMETTI */
+
+/* INIZIO GENERE */
+
+.genere {
+  background-color: #46a3fa;
+  padding: 25px;
+}
+
+.genere .container-genere {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.genere .container-genere li {
+  width: calc(( 100% / 4 ) -150px );
+  list-style-type: none;
+}
+
+.genere .container-genere li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.genere .container-genere li a img {
+  width: 40px;
+  max-height: 55px;
+  vertical-align: middle;
+}
+
+/* FINE GENERE */
+
+/* INIZIO SECONDA PAGINA MAIN */
+
+/* INIZIO DETTAGLI FUMETTO */
+
+.dettagli-fumetto .blu-bar {
+  height: 75px;
+  background-color: #46a3fa;
+}
+
+.dettagli-fumetto .blu-bar .container .small-container {
+  position: relative;
+}
+
+.dettagli-fumetto .blu-bar .container .small-container .img-fumetto {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
+
+.dettagli-fumetto .blu-bar .container .small-container .img-fumetto img {
+  max-width: 140px;
+}
+
+.dettagli-fumetto .action-comics {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dettagli-fumetto .action-comics .details {
+  width: 70%;
+  padding-right: 25px;
+}
+
+.dettagli-fumetto .action-comics .details h2 {
+  padding-bottom: 20px;
+}
+
+.dettagli-fumetto .action-comics .details .navbar-tabella {
+  display: flex;
+  padding: 15px 0;
+  background-color: green;
+  margin-bottom: 20PX;
+  color: white;
+}
+
+.dettagli-fumetto .action-comics .details .navbar-tabella .left-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 78%;
+  padding-right: 20px;
+}
+
+.dettagli-fumetto .action-comics .details .navbar-tabella .right-navbar {
+  width: 22%;
+}
+
+.dettagli-fumetto .action-comics .details .navbar-tabella span {
+  color: lightgreen;
+}
+
+.dettagli-fumetto .action-comics .details .description {
+  line-height: 22px;
+}
+
+.dettagli-fumetto .action-comics .advertisement {
+  width: 30%;
+  padding-left: 15px;
+}
+
+.dettagli-fumetto .background-grey {
+  background-color: lightgray;
+  padding: 40px 0;
+}
+
+.dettagli-fumetto .background-grey .container .small-container {
+  display: flex;
+}
+
+.dettagli-fumetto .background-grey .container .small-container .talent {
+  padding-right: 10px;
+  width: 50%;
+}
+
+.dettagli-fumetto .background-grey .container .small-container .specs {
+  padding-left: 10px;
+  width: 50%;
+}
+
+.dettagli-fumetto .background-grey .container .small-container li {
+  list-style-type: none;
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-bottom: 1px solid grey;
+  flex-wrap: wrap;
+}
+
+.dettagli-fumetto .background-grey .container .small-container li .left {
+  width: 30%;
+}
+
+.dettagli-fumetto .background-grey .container .small-container li .right {
+  width: 70%;
+}
+
+.dettagli-fumetto .background-grey .container .small-container h3 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+/* FINE DETTAGLI FUMETTO */
+
+/* FINE SECONDA PAGINA MAIN */
+
+/* FINE MAIN */
+
+/* INIZIO FOOTER */
+
+/* INIZIO TOP FOOTER */
+
+/* INIZIO LEFT TOP FOOTER */
+
+.background-footer {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  overflow: hidden;
+  height: 354px;
+}
+
+.background-footer .top-footer {
+  display: flex;
+  padding: 20px 0;
+}
+
+.background-footer .top-footer .left-top-footer {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: grey;
+  font-size: 12px;
+}
+
+.background-footer .top-footer .left-top-footer .container-footer-menu {
+  padding-bottom: 10px;
+}
+
+.background-footer .top-footer .left-top-footer .container-footer-menu h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.background-footer .top-footer .left-top-footer .container-footer-menu li {
+  list-style-type: none;
+}
+
+.background-footer .top-footer .left-top-footer .container-footer-menu li a {
+  text-decoration: none;
+  color: grey;
+  font-size: 12px;
+}
+
+.background-footer .top-footer .left-top-footer .blu {
+  color: #0282f9;
+}
+
+/* FINE LEFT TOP FOOTER */
+
+/* INIZIO RIGHT TOP FOOTER */
+
+.right-top-footer {
+  width: 65%;
+  position: relative;
+}
+
+.right-top-footer img {
+  position: absolute;
+  top: -90px;
+  left: 18%;
+  width: 75%;
+}
+
+/* FINE RIGHT TOP FOOTER */
+
+/* FINE TOP FOOTER */
+
+/* INIZIO BOTTOM FOOTER */
+
+.bottom-footer {
+  background-color: #303030;
+  /* test */
+  height: 100px;
+}
+
+/* FINE BOTTOM FOOTER */
+
+/* FINE FOOTER */
+

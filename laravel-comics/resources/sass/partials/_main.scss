@@ -1,0 +1,181 @@
+/* INIZIO MAIN */
+
+/* INIZIO FUMETTI */
+.fumetti{
+    background-color: black;
+    padding: 15px 0;
+    .container-fumetti{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+        .current-series{
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            padding: 8px 25px;
+            background-color: #0282f9;
+            max-width: 187px;
+            font-weight: 600;
+            font-size: 13px;
+            position: absolute;
+            left: 0px;
+            top: -30px;
+        }
+        .singolo-fumetto{
+            margin: 25px 0;
+            width: calc(( 100% / 6 ) - 15px);
+            .image-fumetto{
+                img{
+                    width: 130px;
+                }
+            }
+            .nome-fumetto{
+                text-transform: uppercase;
+                color: white;
+                text-align: center;
+                font-size: small;
+            }
+        }
+    }
+    .load-more{
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        padding: 8px 25px;
+        background-color: #0282f9;
+        max-width: 150px;
+        margin: auto;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}
+/* FINE FUMETTI */
+
+/* INIZIO GENERE */
+.genere{
+    background-color: $primary_color_second_tonality;
+    padding: 25px;
+    .container-genere{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            width: calc(( 100% / 4 ) -150px );
+            list-style-type: none;
+            a{ 
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                font-size: 12px;
+                img{
+                    width: 40px;
+                    max-height: 55px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+/* FINE GENERE */
+
+/* INIZIO SECONDA PAGINA MAIN */
+/* INIZIO DETTAGLI FUMETTO */
+.dettagli-fumetto{
+    .blu-bar{
+        height: 75px;
+        background-color: $primary_color_second_tonality;
+        .container{
+            .small-container{
+                position: relative;
+                .img-fumetto{
+                    position: absolute;
+                    bottom: -50px;
+                    left: 0;
+                    img{
+                        max-width: 140px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .action-comics{
+        padding: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        .details{
+            width: 70%;
+            padding-right: 25px;
+            h2{
+                padding-bottom: 20px;
+            }
+            .navbar-tabella{
+                display: flex;
+                padding: 15px 0;
+                background-color: green;
+                margin-bottom: 20PX;
+                color: white;
+                .left-navbar{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 78%;
+                    padding-right: 20px;
+                }
+                .right-navbar{
+                    width: 22%;
+                }
+                span{
+                    color: lightgreen;
+                }
+            }
+            .description{
+                line-height: 22px;
+            }
+        }
+        .advertisement{
+            width: 30%;
+            padding-left: 15px;
+        }
+    }
+    
+    .background-grey{
+        background-color: lightgray;
+        padding: 40px 0;
+        .container{
+            .small-container{
+                display: flex;
+                .talent{
+                    padding-right: 10px;
+                    width: 50%;
+                }
+                .specs{
+                    padding-left: 10px;
+                    width: 50%;
+                }
+                li{
+                    list-style-type: none;
+                    display: flex;
+                    padding-bottom: 20px;
+                    padding-top: 10px;
+                    border-bottom: 1px solid grey;
+                    flex-wrap: wrap;
+                    .left{
+                        width: 30%;
+                    }
+                    .right{
+                        width: 70%;
+                    }
+                }
+                h3{
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid grey;
+                }
+            }
+        }
+    }
+}
+/* FINE DETTAGLI FUMETTO */
+/* FINE SECONDA PAGINA MAIN */
+/* FINE MAIN */
